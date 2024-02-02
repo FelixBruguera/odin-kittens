@@ -1,0 +1,9 @@
+#kitten {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+#flash {
+    background-color: rgba(0,0,0,0.2);
+}
