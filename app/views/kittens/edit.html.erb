@@ -1,0 +1,7 @@
+<% flash.each do |type, msg| %>
+  <div id='flash'>
+    <%= msg %>
+  </div>
+<% end %>
+<h1>Edit Kitten</h1>
+<%= render partial:'form' %>

@@ -1,0 +1,17 @@
+<% flash.each do |type, msg| %>
+  <div id='flash'>
+    <%= msg %>
+  </div>
+<% end %>
+<h1><%= @kitten.name%> </h2>
+<br>
+<div id='kitten'>
+    <p>Age: </p>
+    <%= @kitten.age %>
+    <p>Cuteness: </p>
+    <%= @kitten.cuteness %>
+    <p>Softness: </p>
+    <%= @kitten.softness %>
+    <%= link_to 'Edit', edit_kitten_path(@kitten.id) %>
+    <%= link_to 'Delete', kitten_path(@kitten.id),  data: { turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+</div>
